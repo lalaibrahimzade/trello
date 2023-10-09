@@ -13,7 +13,7 @@ import AddEditBoardModal from "../modals/AddEditBoardModal";
 import DeleteModal from "../modals/DeleteModal";
 import boardsSlice from "../redux/boardsSlice";
 import { useMediaQuery } from "react-responsive";
-import LogIn from "../Authentication/LogIn";
+import { useNavigate } from "react-router-dom";
 
 export default function Header() {
   const isBigScreen = useMediaQuery({ query: "(min-width: 768px)" });
@@ -27,6 +27,8 @@ export default function Header() {
   const [boardType, setBoardType] = useState("");
   const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false);
   const [isTaskModalOpen, setIsTaskModalOpen] = useState(false);
+
+  const navigate = useNavigate()
 
   const onDropdownClick = () => {
     setOpenDropdown((state) => !state);
@@ -88,8 +90,7 @@ export default function Header() {
           )}
         </button>
        <div style={{width:"750px", height:"20px", display:"flex", alignItems:"center", justifyContent:"space-evenly"}}>
-            <LogIn/>
-            <p>Log out</p>
+            <button onClick={e=>{navigate('/login')}}>Log out</button>
        </div>
 
 

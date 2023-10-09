@@ -2,7 +2,7 @@
   "boards": [
     {
       "name": "TODO'S",
-      "isActive" : false,
+      "isActive": false,
       "columns": [
         {
           "name": "Todo",
@@ -177,6 +177,48 @@
           ]
         }
       ]
+    }
+  ],
+  "users": [
+    {
+      "email": "fuadaliev@gmail.com",
+      "password": "fuad03",
+      "confirm": "fuad03",
+      "nickname": "Fuad",
+      "website": "flkf.com",
+      "gender": "male",
+      "agreement": true,
+      "id": 1
+    },
+    {
+      "email": "fuadaliyev@gmail.com",
+      "password": "fuad03",
+      "confirm": "fuad03",
+      "nickname": "fuad03",
+      "website": "fmfm.com",
+      "gender": "male",
+      "agreement": true,
+      "id": 2
+    },
+    {
+      "email": "fuadaliev3@gmail.com",
+      "password": "fuad03",
+      "confirm": "fuad03",
+      "username": "fuad",
+      "website": "jgjhgjb.com",
+      "gender": "male",
+      "agreement": true,
+      "id": 3
+    },
+    {
+      "email": "fuadalizada@gmail.com",
+      "password": "fuad03",
+      "confirm": "fuad03",
+      "username": "fuad",
+      "website": "fuad.com",
+      "gender": "male",
+      "agreement": true,
+      "id": 4
     }
   ]
 }
